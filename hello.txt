@@ -1,0 +1,11 @@
+#define bf1 ++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.
+#include <stdio.h>
+#define print(x) int main() { printf("Hello, %s\n", name); return 0; }
+#ifdef __OBJC__
+#define name "Objective-C"
+#elif __cplusplus
+#define name "C++"
+#else
+#define name "C"
+#endif
+print("Hello, world!")

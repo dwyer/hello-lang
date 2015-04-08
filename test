@@ -1,0 +1,10 @@
+#!/bin/sh
+for ext in c cpp m; do
+    in="a.$ext"
+    ln -s hello.txt "$in"
+    clang -o a.out "$in" && ./a.out
+    rm -r "$in" a.out
+done
+python hello.txt
+ruby hello.txt
+perl hello.txt
