@@ -5,6 +5,6 @@ for ext in c cpp m; do
     cc -o a.out "$in" && ./a.out
     rm -r "$in" a.out
 done
-python hello.txt
-ruby hello.txt
-perl hello.txt
+for prog in perl python ruby; do
+    "$prog" hello.txt
+done
